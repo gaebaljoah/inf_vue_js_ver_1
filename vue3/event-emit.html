@@ -1,7 +1,7 @@
 <!-- HTML -->
 <div id="app">
   <!-- <app-contents v-on:이벤트이름="상위 컴포넌트의 메서드 이름"></app-contents> -->
-  <app-contents v-on:refresh="showAlert"></app-contents>
+  <app-contents v-on:refresh1="showAlert"></app-contents>
 </div>
 
 <!-- JavaScript -->
@@ -15,7 +15,7 @@
     `,
     methods: {
       sendEvent() {
-        this.$emit('refresh');
+        this.$emit('refresh1');
       }
     }
   }

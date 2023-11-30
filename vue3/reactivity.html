@@ -20,6 +20,7 @@
     set(target, prop, newValue) {
       console.log('값 갱신')
       target[prop] = newValue;
+      console.log("newValue", newValue);
       render(newValue);
     }
   })
